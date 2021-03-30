@@ -1,7 +1,7 @@
 {
   "name": "ceasar-cipher",
   "version": "0.0.1",
-  "description": "Ceasar Cipher with Tests for Zenify",
+  "description": "Ceasar Cipher with Tests for Zennify",
   "main": "index.js",
   "scripts": {
     "test": "jest"
