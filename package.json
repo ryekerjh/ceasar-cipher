@@ -1,0 +1,14 @@
+{
+  "name": "ceasar-cipher",
+  "version": "0.0.1",
+  "description": "Ceasar Cipher with Tests for Zenify",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "ryekerjh",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
