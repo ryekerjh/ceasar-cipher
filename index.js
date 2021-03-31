@@ -3,7 +3,7 @@ const cipher = (word, shift) => {
     if (!shift || isNaN(parseInt(shift))) throw new Error("The cipher shift amount must be a valid number");
     let decoded = "";
     for (let i = 0; i < word.length; i++) {
-        decoded += (word[i].charCodeAt() >= 65 && word[i].charCodeAt() <= 90)
+        decoded += isUpperCase(word[i])
         ? 
             String.fromCharCode((word.charCodeAt(i) + shift - 65) % 26 + 65)
         :
@@ -12,4 +12,7 @@ const cipher = (word, shift) => {
     return decoded;
 };
 
-module.exports = cipher;
+module.exports = {
+    cipher,
+    isUpperCase
+};
