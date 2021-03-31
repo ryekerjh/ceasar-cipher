@@ -1,4 +1,4 @@
-const cipher = require("./");
+const { cipher, isUpperCase } = require("./");
 
 test('lowercase string to be shifted correctly with a negative number', () => {
   const result = cipher("mop", -8);
@@ -30,4 +30,9 @@ test('invalid second argument (number) to throw', () => {
   expect(() => {
     cipher("cheese is good", undefined);
   }).toThrow();
+});
+
+test('isUpperCase to return correct value based on case of passed-in value', () => {
+  expect(isUpperCase("A")).toBeTruthy();
+  expect(isUpperCase("r")).toBeFalsy();
 });
